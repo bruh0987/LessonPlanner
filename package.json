@@ -1,0 +1,20 @@
+{
+  "name": "LessonPlanner-Backend",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.18.0",
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^1.0.0-rc.4",
+    "hono": "^4.13.7"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^1.0.0-rc.4",
+    "tsx": "^4.23.13",
+    "wrangler": "^4.110.0"
+  }
+}
